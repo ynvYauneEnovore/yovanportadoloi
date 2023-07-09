@@ -1,3 +1,4 @@
+ 
 jQuery(function($) {
 
 	'use strict';
@@ -201,3 +202,14 @@ jQuery(function($) {
 	counterInit();
   
 });
+
+
+document.getElementById('play-video').addEventListener('click', function(event) {
+	event.preventDefault(); // Evita la acción predeterminada del enlace
+	
+	// Obtén el elemento de video por su id
+	var video = document.getElementById('video');
+	
+	// Reproduce el video
+	video.play();
+  });
